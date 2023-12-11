@@ -1,0 +1,13 @@
+server:
+  port: 15431
+
+spring:
+  datasource:
+    master:
+      hikari:
+        jdbc-url: jdbc:postgresql://localhost:15432/${spring.application.name}
+        username: user
+        password: pass
+        driver-class-name: org.postgresql.Driver
+        minimum-idle: 2
+        maximum-pool-size: 2

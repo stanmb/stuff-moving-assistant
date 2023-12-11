@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: stuff-moving-assistant
+  main:
+    banner-mode: off
+
