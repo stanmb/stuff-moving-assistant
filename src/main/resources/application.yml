@@ -1,6 +1,13 @@
-spring:
-  application:
-    name: stuff-moving-assistant
-  main:
-    banner-mode: off
+server:
+  port: 15431
 
+spring:
+  datasource:
+    master:
+      hikari:
+        jdbc-url: jdbc:postgresql://localhost:5432/database
+        username: name
+        password: 12345678
+        driver-class-name: org.postgresql.Driver
+        minimum-idle: 2
+        maximum-pool-size: 2
